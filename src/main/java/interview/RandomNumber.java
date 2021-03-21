@@ -11,10 +11,11 @@ import java.util.Random;
  */
 public class RandomNumber {
     public static void main(String[] arg) {
-        checkEvenOdd(1000);
+        ArrayList<Integer> getIntegerArrayList = checkEvenOdd(1000);
+        getLargestNumber(getIntegerArrayList);
     }
 
-    private static void checkEvenOdd(int randomIntegerNumbers) {
+    private static ArrayList<Integer> checkEvenOdd(int randomIntegerNumbers) {
         int evenCounter = 0;
         int oddCounter = 0;
         // creating the arraylist of integer type for storing integer numbers
@@ -38,5 +39,26 @@ public class RandomNumber {
         // get counts of even and odd
         System.out.println("Even number count is : " + evenCounter);
         System.out.println("Odd number count is : " + oddCounter);
+
+        return randomIntegerList;
     }
+
+    public static void getLargestNumber(ArrayList<Integer> randomIntegerList) {
+        int largeNumberIndex = 0;
+        for (int loop = 0; loop < randomIntegerList.size(); loop++) {
+            //first we will find the index of 1 number
+            int number = randomIntegerList.get(largeNumberIndex);
+            //compare it with the others
+            for (int i = 0; i < randomIntegerList.size(); i++) {
+                if (number < randomIntegerList.get(i)) {
+                    //store the index of largest number
+                    largeNumberIndex = i;
+                    break;
+                }
+            }
+            //repeat step  1,2 and 3 for size of list
+        }
+        System.out.println(randomIntegerList.get(largeNumberIndex) + " Index: " + largeNumberIndex);
+    }
+
 }
