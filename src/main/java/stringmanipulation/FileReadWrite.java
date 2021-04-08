@@ -24,3 +24,10 @@ public class FileReadWrite {
         printWriter.close();
     }
 }
+
+
+
+
+//        FileOutputStream fileOutputStream = new FileOutputStream("Hello");
+//        DataOutputStream dataOutputStream = new DataOutputStream(fileOutputStream);
+//        BufferedOutputStream bufferedOutputStream  = new BufferedOutputStream(dataOutputStream);

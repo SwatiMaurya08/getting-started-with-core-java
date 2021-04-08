@@ -8,8 +8,8 @@ package interview;
  */
 public class StringSwap {
     public static void main(String[] args) {
-        String str = "Swati>==<!Maurya";
-        String[] str1 = str.split(">==<!");// "Swati" ,"Maurya"
+        String str = "Swati Maurya";
+        String[] str1 = str.split(" ");// "Swati" ,"Maurya"
         for (int i = (str1.length) - 1; i >= 0; i--) {
             System.out.print(str1[i] + "  ");
         }

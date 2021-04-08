@@ -1,5 +1,7 @@
 package com.softhinkers;
 
+import java.lang.reflect.Method;
+
 /**
  * @author Swati Maurya
  * @company Softhinkers
@@ -18,8 +20,10 @@ class Boy extends MethodOveriding{
         System.out.println("Boy is eating");
     }
     public static void main( String args[]) {
+        MethodOveriding methodOveriding = new Boy();
         Boy obj = new Boy();
         //This will call the child class version of eat()
         obj.eat();
+        methodOveriding.eat();
     }
 }

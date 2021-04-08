@@ -2,7 +2,6 @@ package interview;
 
 public interface Interfaces {
     void fruits();
-
     void fruitsColour();
 
     class Banana implements Interfaces {

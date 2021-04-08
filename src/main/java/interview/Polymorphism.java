@@ -23,7 +23,6 @@ class main{
         Polymorphism polymorphism = new Polymorphism();
         Polymorphism polymorphism1 = new Dog();
         Polymorphism polymorphism2 = new Pig();
-
         polymorphism.AnimalVoice();
         polymorphism1.AnimalVoice();
         polymorphism2.AnimalVoice();
