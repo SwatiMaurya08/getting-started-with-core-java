@@ -8,6 +8,5 @@ public class StringArray {
         for(int i = 0; i < (age.length) - 1; i++){
             System.out.println(age[i]);
         }
-
     }
 }
