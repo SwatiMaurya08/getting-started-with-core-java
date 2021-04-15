@@ -4,8 +4,7 @@ public class StringLetterCount {
     public static void main(String[] args) {
         String inputString = "swatimaurya";
         int[] counter = new int[256];
-        int length = inputString.length();
-        for (int i = 0; i < length; i++) {
+        for (int i = 0; i < inputString.length(); i++) {
             counter[(int) inputString.charAt(i)]++;
         }
         for(int i = 0; i < 256; i++){

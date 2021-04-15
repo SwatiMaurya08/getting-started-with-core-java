@@ -2,7 +2,7 @@ package javaproblemsolvingstring;
 
 public class StringOccurencesOfWords {
     public static void main(String[] args) {
-        String str = "beautiful beach";
+        String str = "hello how are you";
         char[] tempStr = str.toCharArray();
         System.out.print("Duplicate Characters in above string are: ");
         for (int i = 0; i < str.length(); i++) {
