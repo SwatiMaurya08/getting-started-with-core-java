@@ -10,6 +10,10 @@ public class MethodOverriding1 {
     public void displayInfo() {
         System.out.println("I am an animal.");
     }
+    public void displayInfo1(){
+        System.out.println("I am an Bird");
+
+    }
 }
 
 class Dog extends MethodOverriding1 {
@@ -20,8 +24,9 @@ class Dog extends MethodOverriding1 {
 
     public static void main(String[] args) {
         MethodOverriding1 methodOverriding1 = new MethodOverriding1();
+        MethodOverriding1 methodOverriding2 = new Dog();
         methodOverriding1.displayInfo();
         Dog dog = new Dog();
-        dog.displayInfo();
+        methodOverriding2.displayInfo();
     }
 }

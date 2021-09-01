@@ -20,7 +20,7 @@ public class StaticVariable {
         System.out.println(obj1.myClassVar);
         System.out.println(obj2.myClassVar);
 
-        obj2.myClassVar = "Text Changed";
+        obj1.myClassVar = "Text Changed";
 
         System.out.println(obj.myClassVar);
         System.out.println(obj1.myClassVar);

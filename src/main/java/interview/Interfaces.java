@@ -19,6 +19,7 @@ public interface Interfaces {
 
     public static void main(String[] args) {
         Interfaces interfaces = new Banana();
+        //Banana banana = new Banana();
         interfaces.fruits();
         interfaces.fruitsColour();
 

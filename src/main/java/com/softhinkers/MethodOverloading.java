@@ -16,6 +16,7 @@ public class MethodOverloading {
         System.out.println(num + " " + str);
     }
 
+
     public static void main(String[] args) {
         MethodOverloading methodOverloading = new MethodOverloading();
         methodOverloading.myMethod(4);

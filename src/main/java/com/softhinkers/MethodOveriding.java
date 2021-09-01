@@ -20,10 +20,11 @@ class Boy extends MethodOveriding{
         System.out.println("Boy is eating");
     }
     public static void main( String args[]) {
-        MethodOveriding methodOveriding = new Boy();
+       MethodOveriding methodOveriding = new Boy();
+       MethodOveriding methodOveriding1 = new MethodOveriding();
         Boy obj = new Boy();
-        //This will call the child class version of eat()
-        obj.eat();
         methodOveriding.eat();
+        obj.eat();
+        methodOveriding1.eat();
     }
 }

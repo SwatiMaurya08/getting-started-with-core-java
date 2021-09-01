@@ -1,6 +1,5 @@
 package interview;
 
-import javax.crypto.spec.PSource;
 
 public abstract class Abstractions {
 
@@ -31,6 +30,7 @@ class Cat extends Abstractions{
 class main1{
     public static void main(String[] args){
         Abstractions abstractions = new Cat();
+        Cat cat = new Cat();
         abstractions.AnimalSound();
         abstractions.AnimalType();
         abstractions.sound();

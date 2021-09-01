@@ -1,7 +1,5 @@
 package javaproblemsolvingstring;
 
-import java.util.Locale;
-
 public class StringReverse {
     public static void main(String[] args) {
         String inputString = "Welcome to the Core Java";
@@ -11,6 +9,5 @@ public class StringReverse {
            outputString = outputString+tempString[i];
         }
         System.out.println(outputString);
-
     }
 }

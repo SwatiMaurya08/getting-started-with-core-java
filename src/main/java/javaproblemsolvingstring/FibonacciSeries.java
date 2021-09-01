@@ -6,7 +6,7 @@ public class FibonacciSeries {
         int previousNumber = 0;
         int nextNumber = 1  ;
         for (int i = 1; i <= maxNumber; ++i){
-            System.out.print(previousNumber+" ");
+            System.out.print(previousNumber+ " ");
             int sum = previousNumber + nextNumber;
             previousNumber = nextNumber;
             nextNumber = sum;
@@ -17,3 +17,4 @@ public class FibonacciSeries {
  * to the first number and assigning the sum of last two
  * numbers to the second number
  */
+
